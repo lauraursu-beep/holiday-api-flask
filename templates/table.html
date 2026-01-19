@@ -1,0 +1,25 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holidays List</title>
+</head>
+<body>
+    <h1>Data from JSON</h1>
+    <table>
+       <tr>
+        <th>holidayName</th>
+        <th>startDate</th>
+        <th>endDate</th>
+       </tr>
+       {% for row in data %}
+       <tr>
+        <td>{{row.holidayName}}</td>
+        <td>{{row.startDate}}</td>
+        <td>{{row.endDate}}</td>
+       </tr>
+       {% endfor %}
+    </table>
+</body>
+</html>
