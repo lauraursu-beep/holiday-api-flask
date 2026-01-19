@@ -1,9 +1,16 @@
-from flask import Flask, jsonify,request
+from flask import Flask, jsonify, render_template,request
 import json
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET'])
+@app.route('/', methods=['GET', 'POST'])
+def create_table():
+    with open('file.json', 'r')as f:
+        data = json.load(f)
+
+    return render_template('table.html', data=data)
+
+@app.route('/jsonify', methods=['GET'])
 def get_holiday():
     with open('file.json', 'r') as f:
         data = json.load(f)
