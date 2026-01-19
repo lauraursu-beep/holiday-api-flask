@@ -6,7 +6,9 @@ def convert_json_table():
         data = json.load(file)
     
     table_html = json2html.convert(json = data)
-    with open('table.html','w') as file:
+    with open('method_2.html','w') as file:
         file.write(table_html)
     
     return("HTML table generated") 
+
+
