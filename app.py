@@ -9,6 +9,7 @@ def home():
 
 @app.get('/holidays')
 def create_table():
+
     with open('file.json', 'r')as file:
         holidays = json.load(file)
 
@@ -38,7 +39,41 @@ def add_holiday_to_file():
     with open('file.json','w') as file:
         json.dump(holidays,file,indent=4)
     
-    return  redirect(url_for('create_table'))
+    return redirect(url_for('create_table'))
+
+@app.get('/remove/holiday')
+def remove_holiday_page():
+    with open('file.json', 'r')as file:
+        holidays = json.load(file)
+
+    return render_template('RemoveHoliday.html', data = holidays)
+
+@app.post('/remove/holiday')
+def remove_holiday():
+    holiday_name = request.form.get('holidayName')
+    holiday_start_date = request.form.get('startDate')
+    holiday_end_date = request.form.get('endDate')
+
+    old_data = {
+        'holidayName': holiday_name,
+        'startDate': holiday_start_date,
+        'endDate': holiday_end_date
+    }
+
+    with open ('file.json', 'r') as file:
+        holidays = json.load(file)
+    
+    if old_data not in holidays:
+        return "Data not in Holidays"
+    
+    holidays.remove(old_data)
+
+    with open('file.json', 'w') as file:
+        json.dump(holidays, file, indent = 4)
+        return redirect(url_for('create_table'))
+    
+    
+
 
     
 if __name__ == '__main__':
