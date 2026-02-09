@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remove a Holiday Page</title>
+</head>
+<body>
+    <form action="/remove/holiday" method="post">
+
+        <h2>Select a Holiday to Remove</h2><br><br>
+
+        <label>Select Holiday Name:</label>
+        <input type="text" name="holidayName" placeholder="Holiday Name"><br><br>
+
+        <label >Select Start Date:</label>
+        <input type="date" name="startDate"><br><br>
+
+        <label >Select End Date:</label>
+        <input type="date" name = "endDate"><br><br>
+
+        <input type="submit" value="Submit">
+
+
+
+    <h2>List of Current Holidays</h2>
+    <table>
+        <tr>
+            <th>Holiday Name</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row.holidayName }}</td>
+            <td>{{ row.startDate }}</td>
+            <td>{{ row.endDate }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+</body>
+</html>
