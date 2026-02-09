@@ -1,57 +1,57 @@
-[{
+[
+    {
         "holidayName": "Christmas",
         "startDate": "2026-12-25",
         "endDate": "2026-12-25"
-        },
-{
-        "holidayName": "Halloween", 
+    },
+    {
+        "holidayName": "Halloween",
         "startDate": "2026-10-31",
         "endDate": "2026-10-31"
-        },
-{
+    },
+    {
         "holidayName": "New Year's Day",
         "startDate": "2027-01-01",
         "endDate": "2027-01-01"
-
-        },
-{   
-        "holidayName":"Thanksgiving",
-        "startDate":"2026-10-27",
-        "endDate":"2026-10-27"
-
-        },
-{
-        "holidayName":"Boxing Day",
-        "startDate":"2026-12-26",
-        "endDate":"2026-12-26"
-
-        },
-{   
-        "holidayName":"Valentine's Day",
-        "startDate":"2027-02-14",
-        "endDate":"2027-02-14"
-
-        },
-{   
-        "holidayName":"Easter",
-        "startDate":"2027-04-04",
-        "endDate":"2027-04-04"
-
     },
-{  
-        "holidayName":"Mother's Day",
-        "startDate":"2027-03-08",
-        "endDate":"2027-03-08"
-
-   },
-{
-        "holidayName":"Labour Day",
-        "startDate":"2027-05-01",
-        "endDate":"2027-05-01"
+    {
+        "holidayName": "Thanksgiving",
+        "startDate": "2026-10-27",
+        "endDate": "2026-10-27"
     },
-{
-        "holidayName":"Ramadan",
-        "startDate":"2026-02-19",
-        "endDate":"2026-03-21"
-   }
+    {
+        "holidayName": "Boxing Day",
+        "startDate": "2026-12-26",
+        "endDate": "2026-12-26"
+    },
+    {
+        "holidayName": "Valentine's Day",
+        "startDate": "2027-02-14",
+        "endDate": "2027-02-14"
+    },
+    {
+        "holidayName": "Easter",
+        "startDate": "2027-04-04",
+        "endDate": "2027-04-04"
+    },
+    {
+        "holidayName": "Mother's Day",
+        "startDate": "2027-03-08",
+        "endDate": "2027-03-08"
+    },
+    {
+        "holidayName": "Labour Day",
+        "startDate": "2027-05-01",
+        "endDate": "2027-05-01"
+    },
+    {
+        "holidayName": "Ramadan",
+        "startDate": "2026-02-19",
+        "endDate": "2026-03-21"
+    },
+    {
+        "holidayName": "Independence Day",
+        "startDate": "2026-07-04",
+        "endDate": "2026-07-04"
+    }
 ]
